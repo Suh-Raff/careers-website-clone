@@ -20,7 +20,7 @@ EXP = [
     'id': 3,
     'title': 'HTML',
     'projects': 'Tiger Webpage',
-    'description': 'A webpage with information about a tiger sanctuary',
+    'description': 'A webpage with information about how to save tigers from extinction',
   }
 ]
 
