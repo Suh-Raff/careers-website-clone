@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>Poo Shon's Webpage</title>
+  <title>Thea-Ky</title>
 </head>
   
 <body>
+  {% include 'nav.html' %}
   <div class="container">
   <h1 class="text-center mt-2 mb-4">Poo Shon</h1>
   <img class="img-fluid" src="/static/hello.png" id="banner">
@@ -24,8 +25,9 @@
     </div>
     <div class="text-center">
       <button type="button" class="btn btn-primary btn-lg">Contact Me</button>
-      <p class="mt-4">Copyright 2024, Poo Shon</p>
+<!--       <p class="mt-4">Copyright 2024, Poo Shon</p>
+ -->    </div>
     </div>
-    </div>
+  {% include 'footer.html' %}
 </body>
 </html>
