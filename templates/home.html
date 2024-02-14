@@ -10,24 +10,30 @@
   
 <body>
   {% include 'nav.html' %}
-  <div class="container">
+<!--  -->  <div class="container">
   <h1 class="text-center mt-2 mb-4">Poo Shon</h1>
   <img class="img-fluid" src="/static/hello.png" id="banner">
   
   <h2 class="text-center mt-4 mb-3">About Poo Shon</h2>
+<div class="row" style="margin-bottom: 16px">
+
+  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam doloribus nam quo quis eligendi distinctio repellat vel, molestiae molestias voluptates fuga impedit libero? Nihil distinctio, tenetur laboriosam optio exercitationem vel.
+  </p>
+      
+    <img src="/static/tired-employee.png" style="height:300px; border-radius: 4px;">
+
+  <h2 class="text-center mt-2 mb-4">Experience</h2>
   
-  <p class="lead">Eveniet exercitationem sapiente aliquam cum unde sed, deserunt voluptatum laboriosam et quisquam, quia quaerat dolorum! Soluta placeat suscipit magni.</p>
-    <h2 class="text-center mt-2 mb-4">Experience</h2>
-    <div>
+  <div>
       {% for exp in exps %}
         {% include 'experience.html' %} 
       {% endfor %}
     </div>
+</div>
     <div class="text-center">
         <a class="btn btn-primary btn-lg" href=" mailto:thea-ky.org?body=Name%3A%0D%0ADescription%3A%0D%0ABest%20contact%20time%3A ">Contact Me</a>
       
-<!--       <p class="mt-4">Copyright 2024, Poo Shon</p>
- -->    </div>
+    </div>
     </div>
   {% include 'footer.html' %}
 </body>
