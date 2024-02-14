@@ -25,12 +25,16 @@ EXP = [
 ]
 
 @app.route("/")
-def hello_world():
+def home():
   return render_template("home.html", exps=EXP)
 
+@app.route("/about")
+def about():
+  return render_template("about.html")
+  
 @app.route("/exp")
 def list_jobs():
   return jsonify(EXP)
-
+  
 if __name__ == "__main__":
   app.run(host="0.0.0.0", debug=True)
