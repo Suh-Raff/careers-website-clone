@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>About Me</title>
+</head>
+  
 <body>
-  <div class="about">
-<h1>About me</h1>
-<p>This is a portfolio site about anything that can be put in a portfolio.</p>
-  </div>
+  {% include 'nav.html' %}
+  <div class="container">
+    <img class="img-fluid" src="/static/about.png" id="banner">
+
+    <h2 class="text-center mt-4 mb-3">About Me 🐼</h2>
+  <div class="row" style="margin-bottom: 16px">
+
+  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam doloribus nam quo quis eligendi distinctio repellat vel, molestiae molestias voluptates fuga impedit libero? Nihil distinctio, tenetur laboriosam optio exercitationem vel.
+  </p>
+    
+  <h2 class="text-center mt-2 mb-4">My Goal</h2>
+    <p class="lead">Ullam doloribus nam quo quis eligendi distinctio repellat vel, molestiae molestias voluptates fuga impedit libero? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil distinctio, tenetur laboriosam optio exercitationem vel.
+      </p>
+    <h2 class="text-center mt-2 mb-4">Experience</h2>
+  <div>
+      {% for exp in exps %}
+        {% include 'experience.html' %} 
+      {% endfor %}
+    </div>
+</div>
+    </div>
+  {% include 'footer.html' %}
 </body>
+  <style>
+    body {
+      background-color: #999999;
+      color: #dddddd
+    }
+  </style>
 </html>
